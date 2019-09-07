@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VIXstore.com</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.1-web/css/all.css">
+        
+    </head>
+    <body>
+        <ul style="color: darkcyan">
+            <li><a class="navleft" href="index.html">Home</a></li>
+            <li><a class="navleft" href="index3.html">News</a></li>
+            <li><a class="navleft" href="#">Contact</a></li>
+            <li><a class="navleft"href="#frame">About</a></li>
+            <li><button class="navright"><a href="index2.html">sign up</a></button></li>
+            
+            <li><button class="open-button" onclick="openForm()">log in</button></li>
+
+        </ul>
+        <div>
+             <div class="one" >
+                <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1 style="color: darkseagreen">Login</h1>
+
+   			      <label for="email" style="position: relative; right: 110px; color: darkslateblue;"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="password" style="position: relative; right: 100px; color: darkslateblue;"><b>Password</b></label>
+   			          <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+ 		         </form>
+	       </div>
+            <script>
+                function openForm() {
+                    document.getElementById("myForm").style.display = "block";
+                }
+                function closeForm() {
+                    document.getElementById("myForm").style.display = "none";
+}
+
+            </script>
+                 <h1 class="onehead">Welcome to VIX</h1> 
+                 <i class="onecont" >"Buckle Up Cause we're Taking Your Imagination High"</i>
+                 
+             </div>
+            </div>
+            <div class="two">
+                <i class="qoute">"Good friends,Good books and a sleepy conscience: This is the ideal life"</i>
+                <h2 class="head2">Recent</h2>
+                <script>
+                    var i=0;
+                    var images=[];
+                    var time=2000;
+                    images[0]='land.jpeg';
+                    images[1]='wonder.jpg';
+                    images[2]='age.jpg';
+                    images[3]='aln.jpg';
+                    images[4]='mlk.jpg';
+                    function changeimg(){
+                        document.slide.src=images[i];
+                        if(i<images.length-1){
+                            i++;
+                            } else {
+                                i=0;
+                            }
+                        setTimeout("changeimg()",time);
+                    }
+                    window.onload=changeimg;
+                </script>
+                <img class="photo" name="slide" width="350px" height="450px" style="margin-left: 80px">
+
+                <table id="t01">
+                    <caption><h1 class="cap">Best selling</h1></caption>
+                    <tr>
+                        <td colspan="2"><img class="border" alt="harry potter series" src=hp.jpg width="400px"></td>
+                        <td><img class="border" alt="beautiful mind" src="mind.jpg" width="200px" height="277px"></td>
+                        <td><img class="border" alt="beautiful creatures" src="creatures.jpg" width="200px" height="277px"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="border" alt="murder on the orient express" src="murder.jpg" width="200px" height="277px"></td>
+                        <td><img class="border" alt="life of pi" src="lifeofpi2.jpg" width="200px" height="277px"></td>
+                        <td><img class="border" alt="macbeth" src="mac2.jpg" width="200px" height="277px"></td>
+                        <td><img class="border" alt="paper town" src="papertown.jpg" width="200px" height="277px"></td>
+                    </tr>
+                </table>
+                <iframe id="frame" src="index4.html" width="400" height="400" scrolling="no">
+                </iframe>
+                <i class="link">To know About Us <a class="linkin" target="_self" href="index4.html">Click Here</a></i>
+        </div>
+        
+        <div class="footer">
+            <p class="location" style="font-size: 20px; font-family: serif"><b>LOCATION</b></p>
+            <br>
+            <p><i class="location">15 El tahrir street</i></p>
+            <p><i class="location">Cairo,Egypt <i class="fas fa-map-marker-alt"></i></i></p>
+            <p class="icons" style="font-size: 20px; font-family: serif"><b>Around THE WEB</b></p>
+            <br>
+            <p class="icons2"><i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-google-play"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i></p>
+       </div> 
+
+     
+   
+    
+    </body>
+</html>

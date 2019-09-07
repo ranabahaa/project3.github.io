@@ -1,0 +1,376 @@
+*{
+    margin:0px;
+}
+body{
+    background-color: #2c3e50;
+}
+
+/*the navbar*/
+ul{   
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 0px;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: lavender;
+}
+.navright{
+    float: right;
+    background-color: maroon;
+    color: white;
+    padding: 0px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    cursor:pointer;
+    float: right;
+    font-size: 17px;
+    margin: 5px 10px;
+    
+}
+.navleft{
+    float: left;
+}
+
+.open-button {
+    background-color: maroon;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    cursor:pointer;
+    float: right;
+    font-size: 17px;
+    margin: 5px 0px;
+    
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    width: 295px;
+    display: none;
+    position: relative;
+    left: 1250px;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    border-radius: 20px;
+   
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus{
+    background-color: lightblue;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: cadetblue;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom:10px;
+    border-radius: 50px;
+    position: relative;
+   
+    
+}
+
+.form-container .cancel {
+    background-color: gray;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+/*the welcome animation*/
+
+.one{
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+    height: 500px;
+    background-image: url(image13.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.onehead{
+    font-size: 70px;
+    height: 300px;
+    position:relative;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    0%{top: -100px}
+    100%{top:120px}
+}
+/*the content animation*/
+.onecont{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    
+}
+@keyframes content{
+    0%{left:-1000px}
+    100%{left:0px}
+}
+/*the second div*/
+.two {
+    text-align: left;
+    height: 1800px;
+    background-image: url(wood.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.qoute{
+    color: aliceblue;
+    font-size:30px;
+    position: relative;
+    top: 200px;
+    left: 30px;
+}
+.photo{
+    border: 10px solid;
+    border-radius: 15px;
+    border-color: #254;
+    float:right;
+    margin: 20px 70px 0px;
+    
+}
+.head2{
+    font-family: serif;
+    font-size: 50px;
+    color: linen;
+    padding-left: 1250px;
+    
+}
+table#t01{
+    margin: 0px;
+    padding: 0px;
+    width:auto;
+    position: relative;
+    left: 60px;
+    top: 430px;
+    border-style: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-style: none;
+}
+.border{
+    border: 7px solid #254;
+    border-radius: 10px;
+}
+.cap{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+#frame {
+    border-radius: 15px;
+    position: relative;
+    left: 1130px;
+    top: 500px;
+}
+.link{
+    color: white;
+    position:relative;
+    top: 550px;
+    left: 800px ;  
+    font-size: 25px;
+    
+}
+.linkin{
+    text-decoration: none;
+    
+}
+.linkin:hover{
+    opacity: 1;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+/*the last part*/
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    height: 200px;
+    width: 200px;
+}
+.location{
+    position: relative;
+    left: 250px;
+    top: 70px;
+}
+.icons{
+    position: relative;
+    bottom: 9px;
+    left: 650px;
+}
+.icons2{
+    position: relative;
+    bottom: 9px;
+    left: 638px;
+}
+.fa-google-plus-g{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 80%;
+    padding: 5px;
+    margin: 7px;
+}
+.fa-google-play{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 80%;
+    padding: 5px;
+    margin: 7px;
+}
+.fa-twitter{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 80%;
+    padding: 5px; 
+    margin: 7px;
+}
+.fa-facebook-f{
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 100%;
+    padding: 6px 9px;
+    margin: 7px;
+    
+}
+/*second page*/
+.secondp{
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+    height: 900px;
+    background-image: url(image13.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navright2{
+    float: right;
+    background-color: maroon;
+    color: white;
+    border-radius: 8px;
+    border-style: hidden;
+    cursor:pointer;
+    float: right;
+    font-size: 17px;
+    margin: 5px 10px;
+    
+}
+.signupcont{
+    width: 450px;
+    height: 450px;
+    border: 3px solid #aaa;
+    background-color: white;
+    position: relative;
+    left: 500px; 
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.in{
+    position: relative;
+    right: 100px;
+    height: 15px;
+    padding: 5px;
+}
+.words{
+    padding-top: 15px;
+    position: relative;
+    right: 170px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: cadetblue;
+}
+.sub{
+    background-color: cornflowerblue;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 15px;
+    color: white;
+}
+table#t02{
+    position: relative;
+    left:325px;
+    top: 100px;
+    border-style: none;
+}
+/*the third page*/
+.thirdp{
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+    height: 700px;
+    background-image: url(image13.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.about{
+    font-size: 22px;
+    width: 500px;
+    position: relative;
+    left: 550px;
+    top: 50px
+}
